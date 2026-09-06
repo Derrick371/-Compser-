@@ -35,6 +35,25 @@
     </li><br>
     <h1 class="intro">Introduction#</h1><br>
     <p>Composer is a tool for dependency management for PHP. It allows you to declare the libraries your project depends on and it will manage(install/update) them for you.</p>
-    
+    <h1>Dependency management #</h1>
+    <p>Composer is not a package manager in the same sense Yum or Apt are. Yes, it deals with "packages" or libraries,but it manages them on a per-project basis, installing them in a directory (e.g.  <button>vendor</button>)inside your project. By default, it does not install anything globally. Thus, it is a dependency manager. It does however support a "global"project for convenience via the <a href="">global</a>command.</p>
+    <p>Suppose:</p>
+    <li>
+        <ol>1. You have a project that depends on a number of libraries.</ol>
+        <ol>2. Some of these libraries depend on their libraries </ol>
+    </li>
+    <p>Composer:</p>
+    <li>
+        <ol>1. Enables you to declare the libraries you depend on.</ol>
+        <ol>2. Find out which versions of which packages can and need to be installed, and installs them(meaning it downloads them into your project).</ol>
+        <ol>3. You can update all your dependencies on one command.</ol>
+    </li>
+    <p>See the <a href="">Basic usage</a>chapter for moredetails on declaring dependencies.</p>
+    <h1>System Requirement#</h1>
+    <p>Composer in it latest versions  requires PHP 7.2. 5 to run.  A long-term support version (2.2.x) still offer support for PHP 5.3.2.+in case you are stuck with a legacy PHP version. A few sensitive php setting and compile flags are also required, but when using the installer you will be warned about any <br>
+        incompabilities 
+    </p>
+    <p>Composer needs several supporting applicationto work effectively, making the process more effectively, making the process of handling package dependencies more efficient. For handling package dependencies more efficient. For decompressing files, Composer relies on tools like <button>7z</button>(e.g. <button>7zz</button>),<button>gzip</button>, <button>tar</button>, <button>unrar</button>, <button>unzip</button>and<button>xz</button>. As for version control systems, Composer intergrates seamlessy with Fossil,git,mecurial,Perforce and Subversion, thereby ensuring the applicaiton's smooth operation and management of library repositories. Before using the composer, ensure that these dependencies are correctly installed on your system,</p>
+    <p>Composer is multi-platform and we strive make it run equally well on windows, Linux and macOS.</p>
 </body>
 </html>
